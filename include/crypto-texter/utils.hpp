@@ -9,6 +9,6 @@
 std::string takeInput(const char *textToShow, const char *saperator);
 
 // Function for outputting given text/string in a nice way
-std::string output();
+void output(const char *textToShow, const char *saperator, const char *result);
 
 #endif // UTILS_HPP

@@ -8,3 +8,7 @@ std::string takeInput(const char *textToShow, const char *saperator) {
   std::getline(std::cin, inputtedText);
   return inputtedText;
 }
+
+void output(const char *textToShow, const char *saperator, const char *result) {
+  std::cout << textToShow << " " << saperator << result << std::endl;
+}
