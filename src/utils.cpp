@@ -4,11 +4,15 @@
 
 std::string takeInput(const char *textToShow, const char *saperator) {
   std::string inputtedText;
-  std::cout << textToShow << " " << saperator;
+  std::cout << textToShow << " " << saperator << " ";
   std::getline(std::cin, inputtedText);
   return inputtedText;
 }
 
 void output(const char *textToShow, const char *saperator, const char *result) {
-  std::cout << textToShow << " " << saperator << result << std::endl;
+  std::cout << textToShow << " " << saperator << " " << result << std::endl;
+}
+
+void title(const char *titleText) {
+  std::cout << std::setw(50) << std::setfill(' ') << titleText << std::endl;
 }

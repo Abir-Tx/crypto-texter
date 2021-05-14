@@ -4,4 +4,12 @@
 #include "string"
 #include "utils.hpp"
 
-int main() { return 0; }
+int main() {
+  title("Crypto Texter");
+  std::cout << std::endl;
+
+  Encrypter *encrypter = new Encrypter();
+  std::string input = takeInput("Enter text to encrypt", "->");
+
+  return 0;
+}
